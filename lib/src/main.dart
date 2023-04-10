@@ -5,6 +5,6 @@ import 'package:rafdev/src/app_widget.dart';
 
 void main() {
   runApp(
-    ModularApp(module: Appmodule(), child: const AppWidget()),
+    ModularApp(module: AppModule(), child: const AppWidget()),
   );
 }

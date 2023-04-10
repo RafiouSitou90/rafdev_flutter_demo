@@ -1,12 +1,13 @@
 import 'package:flutter_modular/flutter_modular.dart';
-import 'package:rafdev/src/feature/onboarding/onboarding_module.dart';
 
-class Appmodule extends Module {
+import 'feature/splash/splash_module.dart';
+
+class AppModule extends Module {
   @override
   List<Bind> get binds => [];
 
   @override
   List<ModularRoute> get routes => [
-        ModuleRoute('/', module: OnboardingModule()),
-      ];
+    ModuleRoute('/', module: SplashModule()),
+  ];
 }
